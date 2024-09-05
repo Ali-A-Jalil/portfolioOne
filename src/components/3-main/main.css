@@ -37,10 +37,11 @@
 }
 
 /* Active */
-.btn-card.active{
+.active{
     opacity: 1;
     font-weight: bold;
     letter-spacing: 0.6px;
+    color: var(--title-dark-color);
 }
 
 

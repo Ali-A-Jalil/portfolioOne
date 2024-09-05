@@ -1,0 +1,27 @@
+.scrollUp{
+    position: fixed;
+    bottom: 3.5rem;
+    right: 2.8rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue-hover);
+    color: var(--title-dark-color);
+    padding: 0.4rem;
+    border: 1px solid rgb(244 , 165, 96 , 0.249);
+    display: none;
+}
+
+.scrollUp:hover{
+    cursor: pointer;
+    scale: 0.9;
+    opacity: 0.8;
+
+}
+
+
+@media screen and (max-width: 600px ) {
+
+    .scrollUp{
+        opacity: 0.3;
+    }
+}

@@ -1,0 +1,118 @@
+.icon-envelope{
+    color : var(--subtitle-dark-color);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+
+}
+
+.title-contact{
+    color: var(--title-dark-color);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle-contact{
+    color: var(--subtitle-dark-color);
+    margin-bottom: 2rem;
+    line-height: 1.65rem;
+}
+
+label{
+    color: var(--subtitle-dark-color);
+    cursor: pointer;
+}
+
+.input-email , .input-message{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.6rem;
+}
+
+#email , #massage{
+    all:unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid var(--border-dark-color);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+#email:focus ,
+#massage:focus{
+
+    border: 1px solid rgb(45, 212, 191);
+
+}
+
+#email:hover ,
+#massage:hover{
+
+    border: 1px solid rgb(45, 212, 191);
+
+}
+
+#massage{
+    height: 9rem;
+    resize: both;
+
+}
+
+.btn-submit{
+    background-color: rgba(36, 37, 46, 1);
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    -ms-border-radius: 5;
+    -o-border-radius: 5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border: 1px solid rgb(63,63,70);
+}
+
+.btn-submit:hover{
+    border: 1px solid rgb(45, 212, 191);
+    cursor: pointer;
+    scale: 0.95;
+}
+
+@media screen and (max-width: 600px ) {
+
+    .animation{
+        display: none;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .input-email , .input-message{
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 2.6rem;
+    }
+    
+
+    #email , #massage{
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1.5rem;
+    }
+}

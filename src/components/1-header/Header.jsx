@@ -4,21 +4,18 @@ import "./header.css"
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("currentTheme") ?? "dark");
 
   useEffect(() => {
     if (theme === "light") {
       document.body.classList.remove("dark");
-    
       document.body.classList.add("light");
+    }else{
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
     }
     
   },[theme]);
-
-
-
-
-
 
 
   return (
@@ -46,9 +43,11 @@ const Header = () => {
       </nav>
 
 
-      <button onClick={()=> localStorage.setItem("currentTheme", "dark" === theme ? "light" : "dark")  setTheme(localStorage.getItem("currentTheme"))}  className="btn-mode">
-        <span className="icon-moon-o"  />
+      
+      <button onClick={()=>`btn-mode ${localStorage.setItem("currentTheme", "dark" === theme ? "light" : "dark") }  ${setTheme(localStorage.getItem("currentTheme"))} )`}  className="">
+        {theme === "dark" ? (<span className="icon-moon-o icon-mode"  />) : (<span className="icon-sun icon-mode" />)}
       </button>
+      
 
 
     {showModal && (

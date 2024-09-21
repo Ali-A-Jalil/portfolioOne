@@ -36,12 +36,22 @@
     opacity: 1;
 }
 
+.light .btn-card{
+    border: 1px solid black;
+    opacity: 0.8;
+    
+}
+
 /* Active */
 .active{
     opacity: 1;
     font-weight: bold;
     letter-spacing: 0.6px;
     color: var(--title-dark-color);
+}
+
+.light .active{
+    background-color: var(--dark-blue-hover);
 }
 
 

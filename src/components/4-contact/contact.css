@@ -1,3 +1,8 @@
+.contact-us{
+    margin-bottom: -15rem;
+}
+
+
 .icon-envelope{
     color : var(--subtitle-dark-color);
     margin-right: 1rem;
@@ -17,6 +22,9 @@
     line-height: 1.65rem;
 }
 
+/* .form-contact{
+    padding-left: 100px;
+} */
 label{
     color: var(--subtitle-dark-color);
     cursor: pointer;
@@ -26,6 +34,19 @@ label{
     display: flex;
     align-items: center;
     margin-bottom: 2.6rem;
+    
+}
+
+.success-message{
+    color: green;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.animationContact{
+    height: 800px;
+    width: 650px;
+    margin-top: -11rem;
 }
 
 #email , #massage{
@@ -65,6 +86,7 @@ label{
 }
 
 .btn-submit{
+    
     background-color: rgba(36, 37, 46, 1);
     padding: 0.75rem 2rem;
     text-align: center;
@@ -89,11 +111,13 @@ label{
     scale: 0.95;
 }
 
+
+
 @media screen and (max-width: 600px ) {
 
-    .animation{
+    /* .animation{
         display: none;
-    }
+    } */
 
     .contact-form{
         display: flex;
@@ -108,11 +132,28 @@ label{
         margin-bottom: 2.6rem;
     }
     
-
+    .animationContact{
+        display: none;
+    }
     #email , #massage{
         width: 100%;
         margin-left: 0;
         padding: 0.7rem 0;
         margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 900px ){
+    .animationContact{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px ){
+    .animationContact{
+        width: 300px;
+        height: 300px;
+        margin-top: 1rem;
     }
 }

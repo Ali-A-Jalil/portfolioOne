@@ -1,4 +1,6 @@
+import Lottie from "lottie-react";
 import "./Hero.css";
+import codeAnimation from "../../../public/Animation/code.json";
 const Hero = () => {
   return (
     <section className="hero">
@@ -9,7 +11,7 @@ const Hero = () => {
         </div>
 
         <h1 className="title">
-          Hi, I am Dev Ali Software Engineer,<br /> Frontend Developer{" "}
+          Hi, I am Dev, Ali Software Engineer,<br /> Frontend Developer{" "}
           <span>React JS</span>
         </h1>
         <p className="description">
@@ -26,7 +28,9 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className="right-section animation"></div>
+      <div className="rightSection">
+        <Lottie loop={true} animationData={codeAnimation} />
+      </div>
     </section>
   );
 };

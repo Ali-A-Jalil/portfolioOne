@@ -121,7 +121,7 @@ button:active{
     scale: 0.7;
 }
 
-.icon-moon-o{
+.icon-mode{
     font-size: 1.5rem;
     color: var(--title-dark-color);
     cursor: pointer;
@@ -141,7 +141,14 @@ button:active{
     -o-transition: 0.3s;
 }
 
-.icon-moon-o:hover{
+.light .icon-mode{
+    color: lightsalmon;
+}
+.light .icon-mode:hover{
+    color: orange;
+}
+
+.icon-mode:hover{
     border: 1px solid rgba(255, 120, 3, 0.927);
     font-size: 1.6rem;
     color: var(--title-dark-color);

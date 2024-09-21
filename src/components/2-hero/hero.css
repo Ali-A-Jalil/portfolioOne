@@ -143,6 +143,11 @@
     color: var(--title-dark-color);
 }
 
+
+.rightSection{
+    height: 500px;
+    width: 630px;
+}
 /* @media screen and (max-width: 300px) {
 
     .parent-avatar{

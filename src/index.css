@@ -11,6 +11,14 @@ html{
     padding: 0;
 }
 
+body{
+    background-color: var(--primary-dark-background);
+    /* padding: 10px; */
+
+    color: var(--title-dark-color);
+
+}
+
 :root{
     --primary-dark-background: #000000;
     --dark-background: #18181b;
@@ -23,13 +31,16 @@ html{
     
 }
 
-body{
-    background-color: var(--primary-dark-background);
-    /* padding: 10px; */
-
-    color: var(--title-dark-color);
-
+.light{
+    --primary-light-background: #f4f4f5;
+    --light-background: #f4f4f5;
+    --title-light-color: #000000;
+    --subtitle-light-color :rgb(38,38,39);
+    --light-blue-hover: rgb(93,188,252);
+    --background-color-btn-card: rgba(36, 37, 46, 1);
 }
+
+
 
 .app-container{
     border: 2px solid var(--border-dark-color);

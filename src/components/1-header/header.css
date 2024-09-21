@@ -76,11 +76,7 @@ _____________________
     font-size: 0.99rem;
 }
 
-.active{
-    background-color: var(--dark-blue-hover);
-    color: var(--title-dark-color);
-    scale: 1.1;
-}
+
 
 .btn-mode{
     font-size: 1.2rem;

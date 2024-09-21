@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import  { useEffect, useState } from "react";
 import "./header.css"
+
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+    
+      document.body.classList.add("light");
+    }
+    
+  },[theme]);
+
+
+
+
+
+
+
   return (
     <header className="header-container">
-      <button className="menu icon-menu" onClick={() => setShowModal(!showModal)} />
+      <button className="menu icon-menu" onClick={() => setShowModal(!showModal)}  />
 
       <nav className="nav-bar">
         <ul className="nav-list ">
           <li >
-            <a className="active" href="">About</a>
+            <a className="" href="">About</a>
           </li>
           <li>
             <a href="">Articles</a>
@@ -27,9 +46,8 @@ const Header = () => {
       </nav>
 
 
-      <button className="btn-mode">
-        <span className="icon-moon-o" />
-        <span />
+      <button onClick={()=> localStorage.setItem("currentTheme", "dark" === theme ? "light" : "dark")  setTheme(localStorage.getItem("currentTheme"))}  className="btn-mode">
+        <span className="icon-moon-o"  />
       </button>
 
 
@@ -42,7 +60,7 @@ const Header = () => {
               <button className="icon-close"  onClick={() => setShowModal(!showModal)} />
             </li>
             <li className="nav-pop-item ">
-              <a className="active"  href="">About</a>
+              <a className=""  href="">About</a>
             </li>
             <li className="nav-pop-item">
               <a href="">Articles</a>
